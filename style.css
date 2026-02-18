@@ -24,6 +24,8 @@ body{
     border:1px solid #3a3a3a;
     border-radius: 16px;
     padding:40px;
+    position:sticky;
+    top:40px;
 }
 .main-content{ 
     background-color: #2a2a2a;
@@ -220,6 +222,11 @@ body{
     border-radius:10px;
     background-color: #1e1e1e;
     overflow:hidden;
+    transition:transform 0.3s ease,box-shadow 0.3 ease ;
+}
+.project:hover{
+    transform:translateY(-5px);
+    box-shadow:0px 0px 10px 5px rgba(0,0,0,0.3);
 }
 
 .project img{
@@ -240,4 +247,5 @@ body{
 }
 .project p{
     color:#a0a0a0;
+
 }
